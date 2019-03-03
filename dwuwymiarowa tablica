@@ -1,3 +1,4 @@
+//Bohdan Isenko 21:55 / 3.03.2019
 #include <conio.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -7,7 +8,7 @@
 int grade[CLASSES][GRADES];
 void disp_grades(int g[] [GRADES]), enter_grades(void);
 int get_grade(int num);
-int main(void) /* программа для хранения оценок */
+int main(void) /* программа для хранения оценок /
 {
 char ch;
 for (;;) {
@@ -29,36 +30,5 @@ break;
 case 'Q':
 return 0;
 }
-}
-}
-
-/* ввод каждой оценки студентов */
-void enter_grades(void)
-{
-int t, i;
-for(t=0; t<CLASSES; t++) {
-printf("Class # %d:\n", t+1);
-for(i=0; i<GRADES; ++i)
-grade[t][i] = get_grade (i);
-}
-}
-
-/* реальный ввод оценки */
-int get_grade(int num) {
-char s [80];
-printf("enter grade for student # %d:\n", num+1);
-gets (s);
-return(atoi(s));
-}
-
-/* вывод оценок класса */
-void disp_grades(int g[] [GRADES])
-{
-int t, i;
-for(t=0; t<CLASSES; ++t)
-{
-printf("Class # %d:\n", t+1);
-for(i=0; i<GRADES; ++i)
-printf("grade for student #%d is %d\n", i+1, g[t][i]);
 }
 }
