@@ -1,1 +1,34 @@
-
+//Bohdan Isenko 21:56 / 3.03.2019
+#include <conio.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#define CLASSES 3
+#define GRADES 30
+int grade[CLASSES][GRADES];
+void disp_grades(int g[] [GRADES]), enter_grades(void);
+int get_grade(int num);
+int main(void) /* программа для хранения оценок /
+{
+char ch;
+for (;;) {
+do {
+printf("(E)nter grades\n");
+printf("(R)eport grades\n");
+printf("(Q) uit\n");
+ch = toupper(getche());
+}
+while(ch!='E' && ch!='R' && ch!='Q');
+switch(ch)
+{
+case 'E':
+enter_grades();
+break;
+case 'R':
+disp_grades(grade);
+break;
+case 'Q':
+return 0;
+}
+}
+}
