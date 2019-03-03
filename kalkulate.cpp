@@ -9,13 +9,13 @@ int p;
 int main()
   
   {
-//Kyrylo Kaibedov 21:15 / 3.03.2019
     while (p != 2)
     {
         printf("1 = calculator \n 2 - exit \n");
         scanf("%d", &p);
         switch (p)
         {
+            //Kyrylo Kaibedov 21:15 / 3.03.2019
         case 1:
         {
             float c;
@@ -35,3 +35,11 @@ int main()
                 c = a / b;
             system("cls");
         }
+        case 2:
+        {
+            break;
+        }
+        }
+        printf("Result = %2.f \n", c);
+    }
+}
