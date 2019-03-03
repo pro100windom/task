@@ -1,1 +1,1 @@
-# task
+# Projekt zaliczeniowy
